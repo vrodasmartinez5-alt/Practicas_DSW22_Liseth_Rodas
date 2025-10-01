@@ -1,0 +1,16 @@
+fun main() {
+    // Crear una lista vacía para los números pares
+    val numerosPares = mutableListOf<Int>()
+
+    // Recorrer del 1 al 100 y guardar los pares
+    for (i in 1..100) {
+        if (i % 2 == 0) {
+            numerosPares.add(i)
+        }
+    }
+
+    // Imprimir la lista y su tamaño
+    println("Números pares entre 1 y 100:")
+    println(numerosPares) // Imprime la lista completa
+    println("Tamaño de la lista: ${numerosPares.size}")
+}
