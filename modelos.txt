@@ -1,0 +1,31 @@
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+
+data class Direccion(
+val departamento: String,
+val municipio: String,
+val distrito: String,
+val complemento: String
+)
+data class Estudiante(
+    val nombre: String,
+   val carnet: String,
+    val edad: Int,
+    val carrera: String,
+    val direccion: Direccion 
+    
+)
+
+fun main() {
+    val student1 = Estudiante(
+        "Liseth",
+        "aaa-000",
+        20,
+        "Sofware",Direccion("La paz", "La paz Este", "Zacatecoluca", "ITCA")
+    )
+   
+
+    println(student1)
+}
